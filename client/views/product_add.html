@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+<div class="col-md-12" style="margin:50px 0;">
+    <a href="/#/"  class="btn btn-primary">View product</a>
+    <a href="/#/add-product"  class="btn btn-primary">Add product with Image</a>
+</div>
+
+<div  ng-controller="MyCtrl as main" ng-init="main.getFile()">
+      <h3>Add Product</h3>
+        <form  name="main.upload_form" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Product Name</label>      
+            <input type="text" class="form-control" name="productName" ng-model="main.productName"/>
+        </div>
+        <div class="form-group">
+            <label>Product Price</label>      
+            <input type="text" class="form-control" name="price" ng-model="main.price"/>
+        </div>
+        <div class="form-group">
+            <label>Product Image</label>      
+
+    <input 
+                type="file" 
+                ngf-select 
+                ng-model="main.file" 
+                name="file" 
+                ngf-pattern="'image/*'"
+                accept="image/*" 
+                ngf-max-size="20MB" 
+                />
+        </div>
+                <div class="form-group">
+            <label>Image thumbnail:</label>      
+
+             <img style="width:100px;" ng-show="!!main.file" ngf-thumbnail="main.file"/>
+            <i ng-show="main.upload_form.file.$error.required">*required</i><br>
+            <i ng-show="main.upload_form.file.$error.maxSize">File too large 
+            {{up.file.size / 1000000|number:1}}MB: max 20M</i>
+           <!--  Multiple files
+            <div class="button" ngf-select ng-model="up.files" ngf-multiple="true">Select</div>
+            Drop files: <div ngf-drop ng-model="up.files" class="drop-box">Drop</div> -->
+            <button type="submit" ng-click="main.upload(main.file)" class="btn btn-success">submit</button>
+            
+
+        </form>
+
+    </div>
+</div>

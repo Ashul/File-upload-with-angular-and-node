@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+<div class="col-md-12" style="margin:50px 0;">
+    <a href="/#/"  class="btn btn-primary">View product</a>
+    <a href="/#/add-product"  class="btn btn-primary">Add product with Image</a>
+</div>
+
+<div class="col-md-12" ng-controller="MyCtrl as main" ng-init="main.getFile()">
+    <div class="col-md-3" ng-repeat="pro in main.file" style="padding: 20px; box-shadow:1px 1px 1px 1px #d4d4d4">
+   <p> Product Name : {{pro.productName}}</p>
+   <p> Product Price : {{pro.price}}</p>
+   <p><img ng-src="img/{{pro.productImg}}" style="width: 100%"></p>
+   <p>View Details</p>
+    </div>
+    </div>

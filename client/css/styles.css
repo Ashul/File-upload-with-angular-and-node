@@ -1,0 +1,131 @@
+*{
+    margin:0;padding:0;
+}
+body{
+   
+    font-family: 'Open Sans', sans-serif !important;
+    color: #666;
+
+
+    }
+
+.p_form{width:45%;float: left;margin: 5px;}
+.p_form2{width:30%;float: left;margin: 5px;}
+
+
+		.thumb {
+    width: 24px;
+    height: 24px;
+    float: none;
+    position: relative;
+    top: 7px;
+}
+form .progress {
+    line-height: 15px;
+}
+
+
+.progress {
+    display: inline-block;
+    width: 100px;
+    border: 3px groove #CCC;
+}
+
+.progress div {
+    font-size: smaller;
+    background: orange;
+    width: 0;
+}
+/*================================Slider=====================*/
+.slider{
+	position: relative;
+	padding:5px;
+	width:610px;
+	margin: auto;
+	margin-top: 40px;
+}
+.slide{
+	position:absolute;
+	top:0;
+	left:0;
+	box-shadow: 0px 0px 15px #999;
+}
+.slide img{width:600px;height: 300px;}
+.arrows{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+
+.arrows img{
+	height: 32px;
+}
+
+h1{
+text-align: center;
+padding: 10px;
+font-size: 40px;
+color: #222;
+}
+ 
+.slide.ng-hide-add, .slide.ng-hide-remove {
+  -webkit-transition:all linear 0.5s;
+  -moz-transition:all linear 0.5s;
+  -o-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+  display:block!important;
+}
+ 
+.slide.ng-hide-add.ng-hide-add-active,.slide.ng-hide-remove {
+  opacity:0;
+}
+ 
+.slide.ng-hide-add,.slide.ng-hide-remove.ng-hide-remove-active {
+  opacity:1;
+}
+
+/*==================================upload file============================*/
+/*input[type="file"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+} 
+
+.upload-field {
+    position: relative;
+    cursor: pointer;
+    width: 300px;
+    height: 30px;
+    line-height: 28px;
+    padding: 5px 10px;
+    border: 1px solid #203F53;
+    border-radius: 5px;
+}
+
+.icon-folder {
+    background-image: url("../images/icon-folder.png");
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    float: right;
+}
+
+.upload-file-button {
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #203F53;
+    background-color: #203F53;
+    color: white;
+    font-size: 15px;
+}*/
